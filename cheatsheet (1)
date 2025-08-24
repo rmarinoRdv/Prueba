@@ -1,0 +1,20 @@
+xrun \
+-timescale 1ns/10ps \
+-v ./LIBS/atpg/stdcell.v \
+-v ./LIBS/atpg/pllclk_dft.v \
+-v ./LIBS/atpg/test_receiver_pn.v \
+-v ./LIBS/atpg/pads.v \
+-v ./LIBS/atpg/PADDOZ.v \
+-v ./LIBS/atpg/combo_pad.v \
+-v ./LIBS/atpg/diff_pad.v \
+-v ./LIBS/atpg/input_diff_pad_rx.v \
+-v ./LIBS/atpg/output_diff_pad_tx.v \
+-v ./LIBS/atpg/TestReceiver_et.v \
+-v ./LIBS/atpg/typical.v \
+-v ./RESULTS_dft_ALU_TOP/ATPG/Files/ALU_TOP.test_netlist.v \
+-v ./RESULTS_dft_ALU_TOP/ATPG/Files/testresults/verilog/VER.ELASTIC.ALU_TOP_compression.mainsim.v \
++access+rwc \
+-gui \
++TESTFILE1=./RESULTS_dft_ALU_TOP/ATPG/Files/testresults/verilog/VER.ELASTIC.ALU_TOP_compression.data.scan.ex1.ts1.verilog \
++TESTFILE2=./RESULTS_dft_ALU_TOP/ATPG/Files/testresults/verilog/VER.ELASTIC.ALU_TOP_compression.data.logic.ex1.ts2.verilog \
+-ALLOWREDEFINITION
